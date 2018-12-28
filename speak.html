@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            background: #a4b0be;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+    <script>
+        let say = prompt('Co chcesz powiedzieć ?');
+        responsiveVoice.speak(say, "Polish Female");
+        btn = document.createElement('button');
+        btn.textContent = ('Jeszcze raz');
+        document.body.appendChild(btn);
+        btn.style.backgroundColor = '#ff7f50';
+        btn.style.color = 'black';
+        btn.style.padding = '20px 50px';
+        btn.style.border = 'none';
+        btn.style.boxShadow = '10px 20px 40px black';
+        btn.style.position = 'absolute';
+        btn.style.top = '50%';
+        btn.style.left = '50%';
+        btn.style.transform = 'translate(-50%, -50%)';
+        btn.addEventListener('click', function () {
+            location.reload();
+        })
+    </script>
+</body>
+
+</html>
